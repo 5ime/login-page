@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/icon.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Register</h2>
+        <form action="register.php" method="POST">
+            <div class="form-group">
+                <p class="name">登录名</p>
+                <input name="username" type="text" placeholder="请输入登录名" required>
+                <i class="iconfont icon-user"></i>
+            </div>
+            <div class="form-group">
+                <p class="name">密码</p>
+                <input name="password" id="password" onchange="ifPassword()" type="text" placeholder="请输入密码" required>
+                <i class="iconfont icon-lock"></i>
+                <p class="tips" id="pass-tips">必须同时包含大写/小写字母和数字(不允许其他字符)</p>
+            </div>
+            <div class="form-group">
+                <p class="name">确认密码</p>
+                <input name="topassword" id="topassword" onchange="ifPassword()" type="text" placeholder="请二次输入密码" required>
+                <i class="iconfont icon-lock"></i>
+                <p class="tips" id="topass-tips">两次输入密码不一致</p>
+            </div>
+            <div class="form-group">
+                <p class="name">电子邮箱</p>
+                <input name="email" id="email" type="email" placeholder="请输入邮箱地址" required>
+                <i class="iconfont icon-email"></i>
+                <p class="tips" id="mail—tips">您输入的邮箱地址不正确</p>
+            </div>
+            <div class="form-group">
+                <p class="name">个人网站</p>
+                <input name="url" id="url" type="text" placeholder="请输入网站地址" required>
+                <i class="iconfont icon-url"></i>
+                <p class="tips" id="url-tips">您输入的网站地址不正确</p>
+            </div>
+            <button type="submit">注册</button>
+            <hr class="or">
+            <a class="register" href="index.html">登录账号</a>
+        </form>
+    </div>
+    <div class="copy">
+        <p>Powered By <a href="#" target="_blank">iami233</a></p>
+    </div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
